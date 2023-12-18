@@ -1,13 +1,13 @@
 import React from 'react'
 import Profile from '../assets/profile.jpg'
-import { FaInstagram } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div>
-            <div className='m-5 flex flex-col sm:flex-row sm:m-3'>
+            <div className='m-5 flex flex-col sm:flex-row sm:m-3 sticky top-0'>
                 <div className="navbar bg-base-100 gap-5">
                     <div className="avatar">
                         <div className="w-24 h-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -34,10 +34,15 @@ const Header = () => {
                         
                     </button>
                     <button className='btn glass'>
-                        <FaInstagram />
+                        <Link to="https://github.com/Prameshbasnet">
+                        
+                            <FaGithub />
+                        </Link>
                     </button>
                     <button className='btn glass'>
+                        <Link to='https://www.linkedin.com/in/pramesh-basnet-10164521a/'>
                         <FaLinkedin />
+                        </Link>
                     </button>
                     <div className='mt-3'>
                         <label className="cursor-pointer grid place-items-center">
